@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sequence Guesser</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="ace/ace.css">
+	<style>
+	.container {
+		position: relative;
+	}
+	.container ul {
+		margin: 0;
+		max-height: 200px;
+		padding: 2em 0 0 40px;
+		overflow: auto;
+	}
+	.container:before{
+		content: '';
+		display: block;
+		position: absolute;
+		height: 2em;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: linear-gradient(to bottom, rgba(255,255,255, 1), rgba(255,255,255,0));
+		z-index: 248;
+	}
+	</style>
+	<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.js"></script>
+	<script>
+	'--------------------'
+	'Stop trying to cheat'
+	'--------------------'
+	eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(0(){\'o r\';i $3=$(\'#3\'),$h=$(\'#h\'),$g=$(\'#g\'),9=4;$3.m(\'p\',0(e){7(e.n===q){d()}});$h.m(\'t\',0(e){e.u();d()});0 d(){i a=$3.b(),5=a.5(\' \').s(0(b){6 w(b,x)}),8=a+\' \',$2;7(!a||9)6;7(5.v>1&&5.I(0(c,f){7(c!==4){6 f>c?f:4}6 4})){8+=\'H l k\'}y{8+=\'K M L l k\'}9=G;$2=$(\'<2></2>\');$3.b(\'\');$g.A($2).z(B);$2.j(\'C...\');E(0(){9=4;$2.j(8)},D.N()*F+J)}});',50,50,'function||li|input|false|split|return|if|str|lock|value|val|last|check||now|output|button|var|text|rule|the|on|which|use|keydown|13|strict|map|click|preventDefault|length|parseInt|10|else|scrollTop|append|9999|Thinking|Math|setTimeout|1000|true|follows|reduce|500|does|follow|not|random'.split('|'),0,{}));
+	</script>
+</head>
+<body class="ace-page ace-page-fixed">
+	<div id="page">
+		<div id="content" role="main">
+			<div class="ace-group ace-page-content-content">
+				<h1>Guess the sequence</h1>
+				<p>A set of 3 values are given to you.</p>
+				<p>These 3 values follow a rule.</p>
+				<p>It is up to you to figure out what this rule is by providing your own values.</p>
+				<p>The program will tell you if your values follow the rule.</p>
+				<div class="ace-form">
+					<input type="text" placeholder="2 4 8" id="input" /> <button type="button" class="ace-button" id="button"><span>Check</span></button>
+				</div>
+				<div class="container">
+					<ul id="output">
+						<li>2 4 8 follows the rule</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="hidden">
+		<script type="text/javascript" src="ace/ace.min.js"></script>
+	</div>
+</body>
+</html>
